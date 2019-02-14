@@ -3,7 +3,7 @@
     $('#table').DataTable({
         "ajax": LoadIndexSupplier()
     })
-    //ClearScreen();
+    ClearScreen();
 })
 
 function LoadIndexSupplier() {
@@ -42,6 +42,7 @@ function Save() {
             $('#myModal').modal('hide');
         }
     });
+    ClearScreen();
 }
 
 function Edit() {
@@ -59,6 +60,7 @@ function Edit() {
             $('#Name').val('');
         }
     });
+    ClearScreen();
 }
 
 function GetById(Id) {
@@ -107,9 +109,9 @@ function Delete(Id) {
     });
 }
 
-//function ClearScreen() {
-//    $('#Nama').val('');
-//    $('#Id').val('');
-//    $('#Update').hide();
-//    $('#Save').show();
-//}
+function ClearScreen() {
+    $('#Nama').val('');
+    $('#Id').val('');
+    $('#Update').hide();
+    $('#Save').show();
+}
