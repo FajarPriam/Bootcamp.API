@@ -1,0 +1,14 @@
+D:\Bootcamp MII\Bootcamp.API\Common\bin\Debug\Common.exe.config
+D:\Bootcamp MII\Bootcamp.API\Common\bin\Debug\Common.exe
+D:\Bootcamp MII\Bootcamp.API\Common\bin\Debug\Common.pdb
+D:\Bootcamp MII\Bootcamp.API\Common\bin\Debug\Core.exe
+D:\Bootcamp MII\Bootcamp.API\Common\bin\Debug\DataAccess.exe
+D:\Bootcamp MII\Bootcamp.API\Common\bin\Debug\EntityFramework.dll
+D:\Bootcamp MII\Bootcamp.API\Common\bin\Debug\EntityFramework.SqlServer.dll
+D:\Bootcamp MII\Bootcamp.API\Common\bin\Debug\Core.pdb
+D:\Bootcamp MII\Bootcamp.API\Common\bin\Debug\DataAccess.pdb
+D:\Bootcamp MII\Bootcamp.API\Common\bin\Debug\EntityFramework.xml
+D:\Bootcamp MII\Bootcamp.API\Common\bin\Debug\EntityFramework.SqlServer.xml
+D:\Bootcamp MII\Bootcamp.API\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\Bootcamp MII\Bootcamp.API\Common\obj\Debug\Common.exe
+D:\Bootcamp MII\Bootcamp.API\Common\obj\Debug\Common.pdb

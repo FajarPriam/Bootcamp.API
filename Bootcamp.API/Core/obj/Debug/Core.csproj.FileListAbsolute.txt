@@ -1,0 +1,10 @@
+D:\Bootcamp MII\Bootcamp.API\Core\bin\Debug\Core.exe.config
+D:\Bootcamp MII\Bootcamp.API\Core\bin\Debug\Core.exe
+D:\Bootcamp MII\Bootcamp.API\Core\bin\Debug\Core.pdb
+D:\Bootcamp MII\Bootcamp.API\Core\bin\Debug\EntityFramework.dll
+D:\Bootcamp MII\Bootcamp.API\Core\bin\Debug\EntityFramework.SqlServer.dll
+D:\Bootcamp MII\Bootcamp.API\Core\bin\Debug\EntityFramework.xml
+D:\Bootcamp MII\Bootcamp.API\Core\bin\Debug\EntityFramework.SqlServer.xml
+D:\Bootcamp MII\Bootcamp.API\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+D:\Bootcamp MII\Bootcamp.API\Core\obj\Debug\Core.exe
+D:\Bootcamp MII\Bootcamp.API\Core\obj\Debug\Core.pdb
