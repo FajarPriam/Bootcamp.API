@@ -52,7 +52,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interface\IItemRepository.cs" />
     <Compile Include="Interface\ISupplierRepository.cs" />
+    <Compile Include="Interface\Master\ItemRepository.cs" />
     <Compile Include="Interface\Master\SupplierRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

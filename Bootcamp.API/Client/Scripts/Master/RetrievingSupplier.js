@@ -1,27 +1,36 @@
 ﻿$(document).ready(function () {
     LoadIndexSupplier();
+    ClearScreen();
+    //menerapkan datatable pada #table
     $('#table').DataTable({
         "ajax": LoadIndexSupplier()
     })
-    ClearScreen();
 })
 
 function LoadIndexSupplier() {
+    
     $.ajax({
         types: "GET",
+        //get data supplier
         url: "http://localhost:18957/api/Supplier",
         async: false,
         dataType: "json",
         success: function (data) {
             var html = '';
+            //deklarasi variabel i untuk menampung 1
             var i = 1;
             $.each(data, function (index, val) {
                 html += '<tr>';
+                //menampilkan no urut
                 html += '<td>' + i + '</td>';
+                //menampilkan Nama Supplier
                 html += '<td>' + val.Name + '</td>';
-                html += '<td> <a href="#" onclick="return GetById(' + val.Id + ')">Edit</a>';
-                html += ' | <a href="#" onclick="return Delete(' + val.Id + ')">Delete</a> </td>';
+                //memanggil function edit menggunakan function GetById untuk mendapatkan id supplier
+                html += '<td> <a href="#" class="fa fa-pencil" onclick="return GetById(' + val.Id + ')"></a>';
+                //memanggil function delete 
+                html += ' | <a href="#" class="fa fa-trash" onclick="return Delete(' + val.Id + ')"></a> </td>';
                 html += '</tr>';
+                //penjumlahan no urut
                 i++;
             });
             $('.tbody').html(html);
@@ -30,12 +39,18 @@ function LoadIndexSupplier() {
 }
 
 function Save() {
+    //membuat objek baru supplier untuk menyimpan data
     var supplier = new Object();
+
     supplier.name = $('#Name').val();
     $.ajax({
+        //data dilempar ke SupplierController melalui url
         url: 'http://localhost:18957/api/Supplier',
+        //untuk mencari type function
         type: 'POST',
+        //untuk menentukan type data yg dilempar
         dataType: 'json',
+        //data yg dilempar berasal dari object supplier
         data: supplier,
         success: function (result) {
             LoadIndexSupplier();
@@ -64,6 +79,7 @@ function Edit() {
 }
 
 function GetById(Id) {
+    debugger;
     $.ajax({
         url: "http://localhost:18957/api/Supplier/" + Id,
         type: "GET",
@@ -110,7 +126,7 @@ function Delete(Id) {
 }
 
 function ClearScreen() {
-    $('#Nama').val('');
+    $('#Name').val('');
     $('#Id').val('');
     $('#Update').hide();
     $('#Save').show();

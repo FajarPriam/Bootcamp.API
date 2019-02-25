@@ -57,8 +57,14 @@
     <Compile Include="Migrations\201902130300300_AddingSupplier.Designer.cs">
       <DependentUpon>201902130300300_AddingSupplier.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201902140449314_addingItem.cs" />
+    <Compile Include="Migrations\201902140449314_addingItem.Designer.cs">
+      <DependentUpon>201902140449314_addingItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\Item.cs" />
     <Compile Include="Model\Supplier.cs" />
+    <Compile Include="Param\ItemParam.cs" />
     <Compile Include="Param\SupplierParam.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -76,6 +82,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201902130300300_AddingSupplier.resx">
       <DependentUpon>201902130300300_AddingSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902140449314_addingItem.resx">
+      <DependentUpon>201902140449314_addingItem.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

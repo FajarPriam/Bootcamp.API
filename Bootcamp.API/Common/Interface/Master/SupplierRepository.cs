@@ -46,6 +46,7 @@ namespace Common.Interface.Master
             var result = 0;
             var supplier = new Supplier();
             supplier.Name = supplierParam.Name;
+            supplier.JoinDate = DateTimeOffset.Now.LocalDateTime;
             supplier.CreateDate = DateTimeOffset.Now.LocalDateTime;
             myContext.Suppliers.Add(supplier);
             result = myContext.SaveChanges();
